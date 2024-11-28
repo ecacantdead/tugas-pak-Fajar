@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Biodata</title>
+</head>
+<body>
+    <form action="contact.php" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Biodata</legend>
+            <p>
+                <label>Nama:</label>
+                <input type="text" name="nama" placeholder="Nama..." />
+            </p>
+            <p>
+                <label>Umur:</label>
+                <input type="text" name="umur" placeholder="Umur..." />
+            </p>
+            <p>
+                <label>Jenis Kelamin:</label>
+                <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+                <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+            </p>
+            <p>
+                <label>Tempat Lahir:</label>
+                <input type="text" name="tempat_lahir" placeholder="Tempat Lahir..." />
+            </p>
+            <p>
+                <label>Tanggal Lahir:</label>
+                <input type="date" name="tanggal" />
+            </p>
+            <p>
+                <label>Alamat:</label>
+                <input type="text" name="alamat" placeholder="Alamat..." />
+            </p>
+            <p>
+                <label>Kota:</label>
+                <select name="kota">
+                    <option value="makassar">Makassar</option>
+                    <option value="pare-pare">Pare-pare</option>
+                    <option value="palopo">Palopo</option>
+                    <option value="enrekang">Enrekang</option>
+                    <option value="watampone">Watampone</option>
+                    <option value="sungguminasa">Sungguminasa</option>
+                    <option value="makale">Makale</option>
+                    <option value="luwu">Luwu</option>
+                    <option value="rantepao">Rantepao</option>
+                    <option value="bone">Bone</option>
+                </select>
+            </p>
+            <p>
+                <label>Provinsi:</label>
+                <select name="provinsi">
+                    <option value="sulawesi-selatan">Sulawesi Selatan</option>
+                    <option value="sulawesi-utara">Sulawesi Utara</option>
+                    <option value="sulawesi-tengah">Sulawesi Tengah</option>
+                    <option value="sulawesi-tenggara">Sulawesi Tenggara</option>
+                    <option value="sulawesi-barat">Sulawesi Barat</option>
+                    <option value="gorontalo">Gorontalo</option>
+                    <option value="aceh">Aceh</option>
+                    <option value="bali">Bali</option>
+                    <option value="jawa-barat">Jawa Barat</option>
+                    <option value="papua">Papua</option>
+                </select>
+            </p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="@gmail.com">
+            <p>
+                <label>Upload Foto:</label>
+                <input type="file" name="foto" accept="image/*" />
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Daftar" />
+            </p>
+            <p>
+                <input type="reset">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

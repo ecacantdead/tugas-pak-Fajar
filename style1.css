@@ -1,0 +1,77 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+:root{
+    --bg-primary: #4938ff;
+    --bg-secondary: #ffffff;
+    --txt-primary: #f7f7f7;
+    --txt-secondary: #222;
+    --icons-bg-primary: #df1515;
+    --icons-bg-secondary: #372d2d;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+   background-color: var(--bg-primary);
+}
+
+.eca {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    border: 1px solid white;
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondary);
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); 
+    /* 0.5 sama dengan keburamannya */
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+
+.title {
+    font-size: 2em;
+}
+
+.icons {
+    margin-top: 8px;
+    font-size: 25px;
+    color: var(--icons-bg-primary);
+
+}
+
+.description {
+    margin-top: 8px;
+    font-size: .5em;
+}
+
+.btn {
+    margin-top: 1px;
+    padding: 2px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.btn:hover{
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    transition: .3s ease-in-out;
+}

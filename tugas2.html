@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nama input</title>
+    <script>
+        function askForName() {
+            let inputnda = true;
+
+            while (inputnda) {
+                let wantToInput = confirm("mko masukkan nama?");
+                if (wantToInput) {
+                    let name = prompt("masukkanki:");
+                    if (name) {
+                        alert("Haloo " + name + "!");
+                    } else {
+                        alert("masukkan nama nu dongo.");
+                    }
+                } else {
+                    inputnda = false;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Assalamualaikum</h1>
+    <button onclick="askForName()">masukkan nama</button>
+</body>
+</html>
